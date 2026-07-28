@@ -35,6 +35,11 @@ int main() {
         snprintf(systemd, sizeof(systemd), "echo '1234' | sudo -S pacman -S --noconfirm hyprland");
         system(systemd);
 
+        system(" git clone https://github.com/Prateek-squadron/hyprconf2lua.git
+               cd hyprconf2lua
+               ./install.sh");
+        system("~/.local/bin/hyprconf2lua ~/.config/hypr/hyprland.conf -o ~/.config/hypr/hyprland.lua");
+
         printf("\nNow which shell you want to use?\n");
         printf("1. Noctalia\n");
         printf("2. Caelestia\n");
