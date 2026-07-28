@@ -35,7 +35,7 @@ int main() {
         snprintf(systemd, sizeof(systemd), "echo '1234' | sudo -S pacman -S --noconfirm hyprland");
         system(systemd);
 
-        system(" git clone https://github.com/Prateek-squadron/hyprconf2lua.git
+        system(" git clone https://github.com/Prateek-squadron/hyprconf2lua.git &&"
                "cd hyprconf2lua &&"
                "./install.sh");
         system("~/.local/bin/hyprconf2lua ~/.config/hypr/hyprland.conf -o ~/.config/hypr/hyprland.lua");
