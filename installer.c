@@ -36,8 +36,8 @@ int main() {
         system(systemd);
 
         system(" git clone https://github.com/Prateek-squadron/hyprconf2lua.git
-               cd hyprconf2lua
-               ./install.sh");
+               "cd hyprconf2lua &&"
+               "./install.sh");
         system("~/.local/bin/hyprconf2lua ~/.config/hypr/hyprland.conf -o ~/.config/hypr/hyprland.lua");
 
         printf("\nNow which shell you want to use?\n");
