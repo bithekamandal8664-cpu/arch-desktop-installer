@@ -15,7 +15,7 @@ int main() {
     printf("What desktop environment do you want?\n");
     printf("1. KDE-plasma\n");
     printf("2. GNOME\n");
-    printf("3. hyprland\n");
+    printf("3. hyprland (Note:- Window manager rather than a traditional DE)\n");
     printf("4. niri (Note:- Window manager rather than a traditional DE)\n");
     printf("choose the number:- ");
 
