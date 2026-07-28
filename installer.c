@@ -57,7 +57,6 @@ int main() {
         confirmation[strcspn(confirmation, "\n")] = '\0';
 
         if (strcmp(confirmation, "yes") == 0) {
-            system("mkdir -p ~/.config/hypr");
             if (strcmp(shell, "1") == 0) {
                 system("echo \"exec-once = qs -c noctalia-shell\" >> ~/.config/hypr/hyprland.conf");
             } else if (strcmp(shell, "2") == 0) {
@@ -83,7 +82,6 @@ int main() {
         fgets(confirmation1, sizeof(confirmation1), stdin);
         confirmation1[strcspn(confirmation1, "\n")] = '\0';
 
-        system("mkdir -p ~/.config/niri/cfg");
 
         if (strcmp(confirmation1, "1") == 0) {
             system("echo '1234' | sudo -S pacman -S --noconfirm noctalia");
