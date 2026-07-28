@@ -45,6 +45,9 @@ int main() {
         printf("2. Caelestia\n");
         printf("choose one! :- ");
 
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
+
         fgets(shell, sizeof(shell), stdin);
         shell[strcspn(shell, "\n")] = '\0';
 
